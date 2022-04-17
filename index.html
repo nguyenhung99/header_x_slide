@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <title>Trường Đại học Tài chính - Marketing</title>
+  <meta charset="utf-8">
+  <meta name="author" content="UFM">
+  <meta name="keywords" content="UFM, Trường Đại học Tài chính - Marketing, Đại học Tài chính - Marketing">
+  <meta name="description" content="Trường Đại học Tài chính - Marketing">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="font/linea-basic/styles.css">
+  <link rel="stylesheet" href="font/linea-arrows/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/stylepc.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/nivo-slider.css">
+  <link rel="stylesheet" href="css/default.css">
+  <style>
+    .reveal {
+      position: relative;
+      transform: translateY(150px);
+      opacity: 0;
+      transition: 1s all ease;
+    }
+
+    .reveal.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .ev {
+      background: none;
+      color: #fff;
+      text-align: center;
+      padding: 5px 5px;
+      float: left;
+      margin-right: 10px;
+      width: 95px;
+    }
+
+    .lazyloaded {
+      border-radius: 3px;
+    }
+
+    figure {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    figure:hover+span {
+      bottom: -36px;
+      opacity: 1;
+    }
+
+    .hover14 figure {
+      position: relative;
+    }
+
+    .hover14 figure::before {
+      position: absolute;
+      top: 0;
+      left: -75%;
+      z-index: 2;
+      display: block;
+      content: '';
+      width: 50%;
+      height: 100%;
+      background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+      -webkit-transform: skewX(-25deg);
+      transform: skewX(-25deg);
+    }
+
+    .hover14 figure:hover::before {
+      -webkit-animation: shine .75s;
+      animation: shine .75s;
+    }
+
+    @-webkit-keyframes shine {
+      100% {
+        left: 125%;
+      }
+    }
+
+    @keyframes shine {
+      100% {
+        left: 125%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper" class="wrapper-container">
+    <nav id="mobile-advanced" class="mobile-advanced"></nav>
+    <style>
+      @media (min-width: 769px) {
+        #header.header-4 .top-header .page-options {
+          float: right;
+          text-align: center;
+        }
+      }
+
+      .img-responsive {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      #search {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 99999999;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        -webkit-transform: translate(0px, -100%) scale(0, 0);
+        -moz-transform: translate(0px, -100%) scale(0, 0);
+        -o-transform: translate(0px, -100%) scale(0, 0);
+        -ms-transform: translate(0px, -100%) scale(0, 0);
+        transform: translate(0px, -100%) scale(0, 0);
+        opacity: 0;
+      }
+
+      #search.open {
+        -webkit-transform: translate(0px, 0px) scale(1, 1);
+        -moz-transform: translate(0px, 0px) scale(1, 1);
+        -o-transform: translate(0px, 0px) scale(1, 1);
+        -ms-transform: translate(0px, 0px) scale(1, 1);
+        transform: translate(0px, 0px) scale(1, 1);
+        opacity: 1;
+      }
+
+      #search input[type="search"] {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        background: rgba(0, 0, 0, 0);
+        font-size: 60px;
+        font-weight: 300;
+        text-align: center;
+        border: 0px;
+        margin: 0px auto;
+        margin-top: -51px;
+        padding-left: 30px;
+        padding-right: 30px;
+        outline: none;
+      }
+
+      #search .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: 61px;
+        margin-left: -45px;
+      }
+
+      #search .close {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        color: #fff;
+        background-color: #428bca;
+        border-color: #357ebd;
+        opacity: 1;
+        padding: 10px 17px;
+        font-size: 27px;
+      }
+    </style>
+    <header id="header" class="sticky-header header-4">
+      <!-- Enable when you wanna add top header for your page -->
+      <!-- <div class="top-header">
+        <div class="container">
+          <div class="page-options">
+            Logo, academy infomation
+          </div>
+        </div>
+      </div> -->
+      <div class="menu-holder">
+        <div class="container">
+          <div class="menu-wrap">
+            <div class="nav-item">
+              <nav id="main-navigation" class="main-navigation">
+                <ul id="menu" class="clearfix">
+                  <li> <a href="https://hvnh.edu.vn/"> <i class='icon-home'></i> Trang chủ</a> </li>
+                  <li> <a href=""> Giới thiệu</a>
+                    <div class='sub-menu-wrap'>
+                      <ul>
+                        <li><a href='su-mang-tam-nhin-va-gia-tri-cot-loi-223.html'>Sứ mệnh - Tầm
+                            nhìn - Giá trị cốt lõi</a></li>
+                        <li><a href='chien-luoc-phat-trien-truong-224.html'>Chiến lược phát
+                            triển Trường</a></li>
+                        <li><a href=''>Bộ nhận diện thương hiệu</a></li>
+                        <li><a href='lich-su-hinh-thanh-va-phat-trien.html'>Lịch sử hình thành
+                            và phát triển</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li> <a href=""> Tổ chức bộ máy</a>
+                    <div class='sub-menu-wrap'>
+                      <ul>
+                        <li><a href='hoi-dong-truong'>Hội đồng Trường</a></li>
+                        <li><a href='ban-giam-hieu.html'>Ban Giám hiệu</a></li>
+                        <li><a href=''>Hội đồng Khoa học và Đào tạo</a></li>
+                        <li><a href=''>Khoa đào tạo</a>
+                          <div class='sub-menu-wrap sub-menu-inner'>
+                            <ul>
+                              <li><a target='_blank' title='Công nghệ thông tin'
+                                  href='https://khoacntt.ufm.edu.vn/'>Công nghệ thông
+                                  tin</a></li>
+                              <li><a target='_blank' title='Du lịch' href='https://khoadulich.ufm.edu.vn/'>Du lịch</a>
+                              </li>
+                              <li><a target='_blank' title='GDQP & GDTC' href='https://gdqp.ufm.edu.vn'>GDQP & GDTC</a>
+                              </li>
+                              <li><a target='_blank' title='Kế toán - Kiểm toán'
+                                  href='https://khoaketoan.ufm.edu.vn/'>Kế toán - Kiểm
+                                  toán</a></li>
+                              <li><a target='_blank' title='Khoa Kinh tế - Luật'
+                                  href='https://khoakinhteluat.ufm.edu.vn/'>Khoa Kinh
+                                  tế - Luật</a></li>
+                              <li><a target='_blank' title='Lý luận chính trị'
+                                  href='https://khoalyluanchinhtri.ufm.edu.vn/'>Lý
+                                  luận chính trị</a></li>
+                              <li><a target='_blank' title='Marketing'
+                                  href='https://khoamarketing.ufm.edu.vn/'>Marketing</a>
+                              </li>
+                              <li><a target='_blank' title='Ngoại ngữ' href='https://khoangoaingu.ufm.edu.vn/'>Ngoại
+                                  ngữ</a></li>
+                              <li><a target='_blank' title='Quản trị kinh doanh'
+                                  href='https://khoaqtkd.ufm.edu.vn/'>Quản trị kinh
+                                  doanh</a></li>
+                              <li><a target='_blank' title='Tài chính - Ngân hàng'
+                                  href='https://khoataichinhnganhang.ufm.edu.vn/'>Tài
+                                  chính - Ngân hàng</a></li>
+                              <li><a target='_blank' title='Thẩm định giá - KDBĐS'
+                                  href='https://khoathamdinhgia.ufm.edu.vn/'>Thẩm định
+                                  giá - KDBĐS</a></li>
+                              <li><a target='_blank' title='Thuế - Hải quan'
+                                  href='https://khoathuehaiquan.ufm.edu.vn/'>Thuế -
+                                  Hải quan</a></li>
+                              <li><a target='_blank' title='Thương mại' href='https://khoathuongmai.ufm.edu.vn/'>Thương
+                                  mại</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href=''>Viện đào tạo</a>
+                          <div class='sub-menu-wrap sub-menu-inner'>
+                            <ul>
+                              <li><a target='_blank' title='Viện đào tạo Quốc tế' href='https://isfm.ufm.edu.vn/'>Viện
+                                  đào tạo Quốc
+                                  tế</a></li>
+                              <li><a target='_blank' title='Viện đào tạo Sau đại học'
+                                  href='https://daotaosdh.ufm.edu.vn/'>Viện đào tạo
+                                  Sau đại học</a></li>
+                              <li><a target='_blank' title='Viện đào tạo thường xuyên'
+                                  href='https://ice.ufm.edu.vn/'>Viện đào tạo thường
+                                  xuyên</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href=''>Phòng chức năng</a>
+                          <div class='sub-menu-wrap sub-menu-inner'>
+                            <ul>
+                              <li><a target='_blank' title='Công nghệ thông tin'
+                                  href='https://phongcntt.ufm.edu.vn'>Công nghệ thông
+                                  tin</a></li>
+                              <li><a target='_blank' title='Công tác sinh viên'
+                                  href='https://phongcongtacsinhvien.ufm.edu.vn/'>Công
+                                  tác sinh viên</a></li>
+                              <li><a target='_blank' title='Kế hoạch - Tài chính'
+                                  href='https://phongkhtc.ufm.edu.vn/'>Kế hoạch - Tài
+                                  chính</a></li>
+                              <li><a target='_blank' title='Khảo thí - QLCL'
+                                  href='https://phongkhaothiquanlychatluong.ufm.edu.vn/'>Khảo
+                                  thí - QLCL</a></li>
+                              <li><a target='_blank' title='Quản lý khoa học'
+                                  href='https://phongquanlykhoahoc.ufm.edu.vn/'>Quản
+                                  lý khoa học</a></li>
+                              <li><a target='_blank' title='Quản lý đào tạo' href='https://uis.ufm.edu.vn/'>Quản lý đào
+                                  tạo</a>
+                              </li>
+                              <li><a target='_blank' title='Quản trị thiết bị' href='https://phongqttb.ufm.edu.vn/'>Quản
+                                  trị thiết
+                                  bị</a></li>
+                              <li><a target='_blank' title='Thanh tra giáo dục'
+                                  href='https://phongthanhtra.ufm.edu.vn/'>Thanh tra
+                                  giáo dục</a></li>
+                              <li><a target='_blank' title='Tổ chức - Hành chính'
+                                  href='https://phongtchc.ufm.edu.vn/'>Tổ chức - Hành
+                                  chính</a></li>
+                              <li><a target='_blank' title='Trạm Y tế' href=''>Trạm Y
+                                  tế</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href=''>Đơn vị nghiên cứu, phục vụ đào tạo</a>
+                          <div class='sub-menu-wrap sub-menu-inner'>
+                            <ul>
+                              <li><a target='_blank' title='Thư viện' href='https://thuvien.ufm.edu.vn/'>Thư viện</a>
+                              </li>
+                              <li><a target='_blank' title='Trung tâm BDTVTCHQ' href='https://fctc.ufm.edu.vn/'>Trung
+                                  tâm
+                                  BDTVTCHQ</a></li>
+                              <li><a target='_blank' title='Trung tâm dịch vụ KTX'
+                                  href='https://phongqlktx.ufm.edu.vn/'>Trung tâm dịch
+                                  vụ KTX</a></li>
+                              <li><a target='_blank' title='Trung tâm Ngoại ngữ - Tin học'
+                                  href='https://cflit.ufm.edu.vn/'>Trung tâm Ngoại ngữ
+                                  - Tin học</a></li>
+                              <li><a target='_blank' title='Trung tâm TS & QHDN' href='https://tsqhdn.ufm.edu.vn/'>Trung
+                                  tâm TS &
+                                  QHDN</a></li>
+                              <li><a target='_blank' title='Viện nghiên cứu kinh tế ứng dụng'
+                                  href='https://iae.ufm.edu.vn'>Viện nghiên cứu kinh
+                                  tế ứng dụng</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href=''>Các Tổ chức Đảng và đoàn thể</a>
+                          <div class='sub-menu-wrap sub-menu-inner'>
+                            <ul>
+                              <li><a target='_blank' title='Ban liên lạc Cựu hưu trí' href=''>Ban liên lạc Cựu hưu
+                                  trí</a></li>
+                              <li><a target='_blank' title='Ban liên lạc Cựu sinh viên'
+                                  href='https://cuusinhvien.ufm.edu.vn/'>Ban liên lạc
+                                  Cựu sinh viên</a></li>
+                              <li><a target='_blank' title='Công đoàn Trường' href='https://congdoan.ufm.edu.vn/'>Công
+                                  đoàn
+                                  Trường</a></li>
+                              <li><a target='_blank' title='Hội Cựu chiến binh Trường'
+                                  href='https://hccb.ufm.edu.vn/'>Hội Cựu chiến binh
+                                  Trường</a></li>
+                              <li><a target='_blank' title='Đảng bộ Trường' href='https://vpdu.ufm.edu.vn/'>Đảng bộ
+                                  Trường</a>
+                              </li>
+                              <li><a target='_blank' title='Đoàn TNCS HCM Trường'
+                                  href='https://doanthanhnien.ufm.edu.vn/'>Đoàn TNCS
+                                  HCM Trường</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li> <a href="dao-tao.html"> Đào tạo</a> </li>
+                  <li> <a href=""> Nghiên cứu</a>
+                    <div class='sub-menu-wrap'>
+                      <ul>
+                        <li><a href=''>Hội nghị - Hội thảo</a></li>
+                        <li><a href=''>Hợp tác quốc tế</a></li>
+                        <li><a href=''>Khoa học công nghệ</a></li>
+                        <li><a href='https://jfm.ufm.edu.vn/index.php/jfm'>Tạp chí Nghiên cứu
+                            Tài chính - Marketing</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li> <a href=""> Tra cứu</a>
+                    <div class='sub-menu-wrap'>
+                      <ul>
+                        <li><a href='3-cong-khai'>Công bố 3 công khai</a></li>
+                        <li><a href='chuong-trinh-dao-tao'>Chương trình đào tạo</a></li>
+                        <li><a href='https://uis.ufm.edu.vn/'>Văn bằng chứng chỉ</a></li>
+                        <li><a href='bang-vang-thanh-tich.html'>Bảng vàng thành tích</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li> <a href="lien-he.html"> Liên hệ</a> </li>
+                </ul>
+              </nav>
+              <div class="btn">
+                <div> <a href="#search"> <button class="search-button"></button></a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="search"> <button type="button" class="close">×</button>
+      <form action="tim-kiem.html" method="get"> <input type="search" name="q" placeholder="Nhập từ khóa cần tìm...">
+        <button type="submit" class="btn btn-primary">Tìm
+          kiếm</button>
+      </form>
+    </div>
+    <script src="js/libs/jquery-2.2.4.min.js"></script>
+    <script>$(function () {
+        $('a[href="#search"]').on('click', function (event) { event.preventDefault(); $('#search').addClass('open'); $('#search > form > input[type="search"]').focus(); }); $('#search, #search button.close').on('click keyup', function (event) { if (event.target == this || event.target.className == 'close' || event.keyCode == 27) { $(this).removeClass('open'); } });
+      });</script>
+    <div class="loader"></div>
+    <div id="content">
+      <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider"> <a href="#"><img src="images/slide/29475Banner_Web_2022_2.jpg" /></a> <a
+            href="#"><img src="images/slide/95791Banner_Web_2022-02.jpg" /></a> </div>
+      </div>
+      <div class="action-widget action-col-4 pull-top">
+        <div class="container">
+          <!-- action-item -->
+          <div class="action-col"> <a href="#" class="action-item event">
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>  <!-- Icon of block -->
+              <h5 class="action-title">Cổng tuyển sinh</h5>
+            </a>
+          </div> <!-- action-item -->
+          <div class="action-col"> <a href="#" class="action-item event">
+              <i class="icon icon-basic-calendar"></i>  <!-- Icon of block -->
+              <h5 class="action-title">Cổng đào tạo</h5>
+            </a>
+          </div> <!-- action-item -->
+          <div class="action-col"> <a href="#" class="action-item event">
+              <i class="icon icon-basic-book-pen"></i>  <!-- Icon of block -->
+              <h5 class="action-title">Nghiên cứu khoa học</h5>
+            </a>
+          </div>
+          <div class="action-col"> <a href="#" target="_blank" class="action-item event">
+              <i class="fa fa-briefcase" aria-hidden="true"></i>  <!-- Icon of block -->
+              <h5 class="action-title">Việc làm Sinh viên</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+      <session>
+        <session>
+          <div class="lazyloaded">
+            <style>
+              .advertisement {
+                position: fixed;
+                bottom: 0;
+                padding: 50px 20px;
+                z-index: 1;
+                transition: all 2s;
+              }
+
+              .hide {
+                opacity: 0;
+                right: -100%;
+              }
+
+              .show {
+                opacity: 1;
+                right: 0;
+              }
+
+              #cf6_image {
+                transition: background-image 1s ease-in-out;
+                background-image: url("images/bannerts.jpg");
+                width: 150px;
+              }
+
+              #cf6_image:hover {
+                background-image: url("images/bannerts2.jpg");
+              }
+
+              .ava {
+                height: 150px;
+                position: relative;
+                width: 150px;
+              }
+
+              .ava img {
+                border-radius: 40px;
+                height: 100%;
+                position: relative;
+                width: 100%;
+                z-index: 2;
+              }
+
+              @keyframes cycle-colors {
+                0% {
+                  border-color: hsl(0, 100%, 50%);
+                }
+
+                25% {
+                  border-color: hsl(90, 100%, 50%);
+                }
+
+                50% {
+                  border-color: hsl(180, 100%, 50%);
+                }
+
+                75% {
+                  border-color: hsl(270, 100%, 50%);
+                }
+
+                100% {
+                  border-color: hsl(360, 100%, 50%);
+                }
+              }
+
+              @keyframes pulse {
+                to {
+                  opacity: 0;
+                  transform: scale(1);
+                }
+              }
+
+              .ava::before,
+              .ava::after {
+                animation: pulse 2s linear infinite;
+                border: pink solid 8px;
+                border-radius: 999px;
+                box-sizing: border-box;
+                content: ' ';
+                height: 140%;
+                left: -20%;
+                opacity: .6;
+                position: absolute;
+                top: -20%;
+                transform: scale(0.714);
+                width: 140%;
+                z-index: 1;
+              }
+
+              .ava::after {
+                animation-delay: 1s;
+              }
+
+              .ava:hover img {
+                content: url('images/bannerts2.jpg');
+              }
+
+              .ava:hover::before,
+              .ava:hover::after {
+                animation: pulse 1s linear infinite, cycle-colors 6s linear infinite;
+              }
+
+              .ava:hover::after {
+                animation-delay: .5s;
+              }
+            </style>
+            <div id="advertisement" class="advertisement hide">
+              <div class="ava"> <a target="_blank" href="https://app.ufm.edu.vn/tuyensinh-2022/"> <img id="cf6_image"
+                    src="images/bannerts.jpg" alt="" /></a> </div>
+            </div>
+            <script src="js/libs/jquery-2.2.4.min.js"></script>
+            <script> $(document).scroll(function () { myID = document.getElementById("advertisement"); var myScrollFunc = function () { var y = window.scrollY; if (y >= 100) { myID.className = "advertisement show" } else { myID.className = "advertisement hide" } }; window.addEventListener("scroll", myScrollFunc); });</script>
+          </div>
+        </session>
+        <div class="page-section">
+          <div class="container reveal">
+            <div class="widget-holder style-3">
+              <div class="tabs tabs-section style-2 clearfix ui-tabs ui-widget ui-widget-content ui-corner-all">
+                <div class="content-element2">
+                  <div class="flex-row flex-justify flex-center"> <a href="tin-tuc">
+                      <h3>
+                        </p>
+                  </div> </a>
+                </div>
+                <div class="action-col"> <a href="#" class="action-item donate">
+                    <div class="wrapper">
+                      <h5 class="action-title <ul class=" info-links">
+                        <li>
+                  </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </footer>
+      </session>
+    </div>
+    <script src="js/libs/jquery-2.2.4.min.js"></script>
+    <script src="js/libs/jquery-ui.minpc.js"></script>
+    <script src="js/jquery.nivo.slider.js"></script>
+    <script
+      type="text/javascript"> $(window).load(function () { $('#slider').nivoSlider({ slices: 15, boxCols: 8, boxRows: 4, animSpeed: 500, pauseTime: 5000, startSlide: 0, directionNav: true, controlNav: false, controlNavThumbs: false, pauseOnHover: true, manualAdvance: false, prevText: 'Prev', nextText: 'Next', randomStart: false, }); });</script>
+    <script> $("#scroll").click(function () {
+        $('html,body').animate({ scrollTop: $("#second").offset().top }, 2000);
+      });</script>
+    <script> function reveal() {
+        var reveals = document.querySelectorAll(".reveal"); for (var i = 0; i < reveals.length; i++) { var windowHeight = window.innerHeight; var elementTop = reveals[i].getBoundingClientRect().top; var elementVisible = 150; if (elementTop < windowHeight - elementVisible) { reveals[i].classList.add("active"); } else { reveals[i].classList.remove("active"); } }
+      }
+      window.addEventListener("scroll", reveal); </script>
+    <script async src="js/lazysizes.min.js"></script>
+    <script src="js/libs/jquery.modernizr.js"></script>
+    <script src="plugins/jquery.queryloader2.min.js"></script>
+    <script src="plugins/owl.carousel.min.js"></script>
+    <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script> jQuery.event.special.touchstart = { setup: function (_, ns, handle) { this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") }); } }; jQuery.event.special.touchmove = { setup: function (_, ns, handle) { this.addEventListener("touchmove", handle, { passive: !ns.includes("noPreventDefault") }); } }; jQuery.event.special.wheel = { setup: function (_, ns, handle) { this.addEventListener("wheel", handle, { passive: true }); } }; jQuery.event.special.mousewheel = { setup: function (_, ns, handle) { this.addEventListener("mousewheel", handle, { passive: true }); } }; </script>
+</body>
+
+</html>
