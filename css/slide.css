@@ -1,0 +1,104 @@
+.advertisement {
+    position: fixed;
+    bottom: 0;
+    padding: 50px 20px;
+    z-index: 1;
+    transition: all 2s;
+}
+
+.hide {
+    opacity: 0;
+    right: -100%;
+}
+
+.show {
+    opacity: 1;
+    right: 0;
+}
+
+#cf6_image {
+    transition: background-image 1s ease-in-out;
+    background-image: url("images/bannerts.jpg");
+    width: 150px;
+}
+
+#cf6_image:hover {
+    background-image: url("images/bannerts2.jpg");
+}
+
+.ava {
+    height: 150px;
+    position: relative;
+    width: 150px;
+}
+
+.ava img {
+    border-radius: 40px;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+@keyframes cycle-colors {
+    0% {
+        border-color: hsl(0, 100%, 50%);
+    }
+
+    25% {
+        border-color: hsl(90, 100%, 50%);
+    }
+
+    50% {
+        border-color: hsl(180, 100%, 50%);
+    }
+
+    75% {
+        border-color: hsl(270, 100%, 50%);
+    }
+
+    100% {
+        border-color: hsl(360, 100%, 50%);
+    }
+}
+
+@keyframes pulse {
+    to {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+.ava::before,
+.ava::after {
+    animation: pulse 2s linear infinite;
+    border: pink solid 8px;
+    border-radius: 999px;
+    box-sizing: border-box;
+    content: ' ';
+    height: 140%;
+    left: -20%;
+    opacity: .6;
+    position: absolute;
+    top: -20%;
+    transform: scale(0.714);
+    width: 140%;
+    z-index: 1;
+}
+
+.ava::after {
+    animation-delay: 1s;
+}
+
+.ava:hover img {
+    content: url('images/bannerts2.jpg');
+}
+
+.ava:hover::before,
+.ava:hover::after {
+    animation: pulse 1s linear infinite, cycle-colors 6s linear infinite;
+}
+
+.ava:hover::after {
+    animation-delay: .5s;
+}
